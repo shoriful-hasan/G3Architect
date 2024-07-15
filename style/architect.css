@@ -1,0 +1,281 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+.work-sans-font {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+  }
+
+
+/* shared style */
+.display-flex{
+    display: flex;
+}
+
+.btn-primary{
+    background-color:#ff900e;
+    color: white;
+    padding: 15px 22px;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 50px;
+}
+
+/* dark 02 */
+
+.light-orange{
+    color: #FF900E;
+}
+
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.5);
+}
+.text-gray{
+    color: #424242;
+}
+/* dark 03 */
+.text-light-gray{
+    color: #727272;
+}
+/* primary style */
+
+.navber , .banner,.teamsection,.feature-will-enjoy,.card-container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.card-container{
+    margin-top: 150px;
+}
+/* local style */
+.navber{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item{
+    list-style: none;
+}
+.nav-link{
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+
+.brand{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+}
+.banner-description{
+    color: #727272;
+
+}
+.banner-imge img{
+    width:100%;
+}
+.teamsection{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    
+    
+    
+}
+.team-right{
+  
+   max-width:580px;
+    margin-left: 40px;
+  
+}
+.right-team-content{
+ font-weight: 800;   
+}
+.team-left{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+}
+
+.left-team-imge img{
+    width: 100%;
+}
+
+
+/* responsive this section */
+
+/* 
+@media screen and(max-width:576px) {
+.navber{
+    flex-direction: column;
+}
+.banner-title{
+    display: none;
+}
+
+} */
+.feature-will-enjoy{
+    margin-top: 180px;
+    
+    width: 100%;
+
+    
+    
+}
+.feature-content{
+    display: flex;
+    width: 580px;
+    margin-bottom: 30px;
+}
+
+.somedesign{
+    width: 10px;
+    height: 150px;
+    background-color: #FF900E;
+
+    
+
+}
+
+.ba-content{
+    margin-left: 30px;
+}
+
+.feature-main-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature-text{
+    
+    
+}
+
+.desktop-mobile{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 8px;
+    width:85%;
+    padding: 20px 40px;
+
+    
+}
+
+
+.box-bound{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+
+}
+
+
+.feature-right{
+    width: 40%;
+
+
+}
+.feature-right img{
+    width: 100%;
+   
+}
+
+.feature-right{
+    position: relative;
+}
+
+.rose-btn{
+    position: absolute;
+bottom: 0px;
+left: -80px;
+}
+
+.btn-design{
+    background-color: #FF900E;
+    padding: 30px 40px;
+text-align: center;
+font-size: 32px;
+color: white;
+font-weight: bold;
+text-transform: capitalize;
+
+}
+
+
+.card-container{
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.common-card{
+    box-shadow: 2px 2px 5px 10px rgba(208, 190, 190, 0.35);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ padding: 15px 12px;
+ border: 1px solid #FF900E;
+}
+
+.some-card-container{
+    display: grid;
+    grid-template-columns: repeat(4,250px);
+    gap: 30px;
+    justify-content: center;
+}
+
+@media screen and (max-width:576px){
+    .navber ,.nav-links,.teamsection,.feature-main-container{
+        flex-direction: column;
+    }
+
+    .team-left{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+  
+}
+
+
+/* medium device design */
+
+
+@media screen and (min-width:576px) and (max-width:992px) {
+
+    .teamsection{
+        flex-direction: column;
+    }
+
+    .team-left{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .feature-main-container{
+        flex-direction: column-reverse;
+       
+    }
+
+    .some-card-container{
+        grid-template-columns: repeat(2,250px);
+       
+    }
+
+}
